@@ -30,3 +30,45 @@ button.pack(pady=10)
 
 # 3. Start the Tkinter event loop
 root.mainloop()
+
+"""
+Tkinter setup for Python (installed via apt on Ubuntu)
+------------------------------------------------------
+
+Step 1 — Check if Tkinter is already installed:
+    python3 -m tkinter
+
+    - If a small blank window titled "Tk" appears, Tkinter is working.
+    - If you get the error:
+        ModuleNotFoundError: No module named '_tkinter'
+      then continue to Step 2.
+
+Step 2 — Install Tkinter package:
+    sudo apt update
+    sudo apt install python3-tk
+
+    This installs both '_tkinter' and the underlying Tcl/Tk libraries.
+
+Step 3 — Verify installation:
+    python3 -m tkinter
+
+    You should now see a small GUI window titled "Tk", confirming Tkinter is working.
+
+Step 4 — Run your Python GUI program:
+    python3 simple_ui.py
+
+    or any other Tkinter-based Python script.
+
+Summary Table
+--------------
+| Step | Command                       | Purpose                    |
+|------|--------------------------------|-----------------------------|
+| 1    | python3 -m tkinter             | Check if Tkinter works     |
+| 2    | sudo apt install python3-tk    | Install Tkinter support    |
+| 3    | python3 -m tkinter             | Verify by opening a window |
+| 4    | python3 your_script.py         | Run your GUI program       |
+
+Note:
+Tkinter will work with any Python version installed via apt on Ubuntu
+once the 'python3-tk' package is installed.
+"""
