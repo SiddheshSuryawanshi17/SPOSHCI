@@ -1,0 +1,10 @@
+100    START 100
+100    LOOP    MOVER    AREG, ='5'
+101            ADD      BREG, ONE
+102            SUB      CREG, ='2'
+103    ONE     DC       1
+104            LTORG
+106            ORIGIN   110
+110            MOVEM   AREG, TWO
+111    TWO     DS      2
+113            END
