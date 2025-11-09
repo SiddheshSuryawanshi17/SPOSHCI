@@ -1,0 +1,9 @@
+START 100
+MACRO
+INCR &A,&B
+    L1 MOVER AREG, &A
+    ADD  AREG, &B
+MEND
+LOOP    INCR X,Y
+        PRINT X
+END

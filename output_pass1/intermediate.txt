@@ -1,0 +1,4 @@
+START 100
+LOOP    INCR X,Y
+        PRINT X
+END
