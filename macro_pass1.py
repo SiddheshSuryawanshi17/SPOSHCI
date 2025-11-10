@@ -234,3 +234,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+'''### **Pass 1 of a Macro Processor (in short):**
+
+**Purpose:**
+To **analyze and store macro definitions** for later expansion in Pass 2.
+
+---
+
+**Main Functions of Pass 1:**
+
+1. **Identify macro definitions** — detects `MACRO` and `MEND` keywords.
+2. **Store information** in tables:
+
+   * **MNT (Macro Name Table):** Stores macro names and MDT index.
+   * **MDT (Macro Definition Table):** Stores the actual macro body (instructions).
+   * **ALA (Argument List Array):** Maps formal parameters (&A, &B, etc.) to positions.
+3. **Remove macro definitions** from the source program.
+4. **Create an intermediate file** containing only normal code and macro calls (no macro definitions).
+
+---
+
+**In short:**
+**Pass 1** = *Define and store macros (build MNT, MDT, ALA) and produce intermediate code for Pass 2.*
+'''
